@@ -1,0 +1,17 @@
+# Core
+numpy
+scipy
+scikit-learn
+tqdm
+einops
+
+# Deep learning (install a torch build matching your CUDA, then the PyG stack)
+torch
+torch-geometric
+torch-scatter
+torch-sparse
+
+# Chemistry
+rdkit
+
+# Tested with: python 3.9-3.11, torch 1.10-1.13, torch-geometric 2.0.x
