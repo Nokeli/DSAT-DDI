@@ -29,8 +29,20 @@ experiments/
 /s
 # generated figures and scratch outputs / data dumps under sat/
 *.pdf
-sat/*.txt
-sat/[0-9]*
+# top-level PyCharm boilerplate
+/main.py
+
+# === Ship ONLY the core DSAT method files from sat/ ===
+# (excludes kegg variants, attention visualization, alt data loaders, tests, scratch)
+sat/*
+!sat/__init__.py
+!sat/train.py
+!sat/model.py
+!sat/models.py
+!sat/layers.py
+!sat/gnn_layers.py
+!sat/position_encoding.py
+!sat/utils.py
 
 # scripts
 .DS_Store
