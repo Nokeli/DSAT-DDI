@@ -31,11 +31,6 @@ Data files are **not** included in this repository. The code expects, under `dat
 - `new_kg.txt` — biomedical knowledge-graph triples (`head tail relation`, space-separated);
 - `new_ddi.txt` — DDI pairs with labels (`drug1 drug2 label`);
 
-**Cold-start splits.** Evaluation uses *strict* drug-level splits where the train / validation / test drug sets are **mutually exclusive**:
-
-- `cold_one_strict` — at least one drug in each test pair is unseen during training;
-- `cold_both_strict` — both drugs in each test pair are unseen.
-
 The first run builds and caches per-drug subgraphs and positional encodings as `*.json` files in `sat/` (these caches are git-ignored).
 
 ## Usage
